@@ -12,50 +12,63 @@ body {
   color: white;
   font-size: 32px;
   font-weight: 900;
-  text-align: left;
-  
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
-  text-align: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
-  padding-right: 120px;
-  display: flex;
-  text-align: center;
+  box-sizing: border-box; 
+  flex-shrink: 0;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  width: 300px;
+}
+
+.cards{
+  padding: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .mid {
-display: flex;
-flex: 1;
+  display: flex;
+  flex: 1;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
-  color: rgb(111, 98, 98);
+  color: white;
+  font-size: 24px;
 }
 
 ul  {
   /* this removes the dots on the list items*/
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
-  gap: 17px;
+}
+
+li{
+  margin-bottom: 16px;
 }
